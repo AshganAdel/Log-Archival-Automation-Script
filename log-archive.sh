@@ -38,7 +38,7 @@ case $send_to in
 read -p "enter the user name: " user_name
 read -p "enter the server IP: " server_IP
 read -p "enter the path of the destination directory: " des_dir 
-scp $user_name@$server_IP:$des_dir 
+scp "$archive_file" "$user_name@$server_IP:$des_dir"
 ;;
 2)
 
